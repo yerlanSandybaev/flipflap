@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Compass, Search, User, PlusCircle, LogOut } from 'lucide-react';
+import { Home, Compass, Search, User, PlusCircle, MessageCircle, LogOut } from 'lucide-react';
 import { signOut } from 'next-auth/react';
 
 export default function Sidebar() {
@@ -12,6 +12,7 @@ export default function Sidebar() {
     { href: '/', icon: Home, label: 'Home' },
     { href: '/explore', icon: Compass, label: 'Explore' },
     { href: '/search', icon: Search, label: 'Search' },
+    { href: '/chat', icon: MessageCircle, label: 'Chat' },
     { href: '/profile', icon: User, label: 'Profile' },
     { href: '/create', icon: PlusCircle, label: 'Create' },
   ];
